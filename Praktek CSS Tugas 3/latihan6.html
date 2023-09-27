@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal Selector dan Style pada Multimedia</title>
+    <link rel="shortcut icon" href="Cheko.png" type="image/x-icon">
+    <style>
+    img {
+        width: 400px;
+        height: 400px;
+        border-radius: 50px;
+        
+        /* Menengahkan gambar */
+        display: block; 
+        margin: 0px auto 0px auto;
+        }
+
+    /* Selector digunakan untuk memilih mana bagiandari HTML yang akan diubah */
+    /* Syntax CSS adalah selector(peoperties: value;) */
+
+    /* Selector dengan nama tag */
+    h1{
+        color: black;
+    }
+    
+    /* Slector id */
+    #judul{
+        color: orange;
+    }
+
+    /* Selector class */
+    .tengah{
+        align-self: center;
+        color: blue;
+    }
+
+    /* Multy selector */
+    h2,h3,h4{
+        color: midnightblue;
+    }
+
+    /* lebih spesifik lagi bisa */
+    h2.tengah{
+        color: pink;
+    }
+    </style>
+</head>
+<body>
+    <img src="Cheko.png">
+
+    <!-- id= memberi tanda khusus elemen, tidak boleh sama -->
+    <h1 id="judul ">INI JUDUL 2</h1>
+    <!-- class= bisa dipakai berkali2, kalau id tidak digunakan berkali2 -->
+    <INI class="tengah">INI JUDUL 3</h1>
+    <h2 class="tengah">HELLO</h2>
+    <h3>Hallo 3</h3>
+</body>
+</html>
